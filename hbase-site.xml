@@ -20,14 +20,6 @@
     <value>hbase-docker</value>
   </property>
   <property> 
-    <name>hbase.regionserver.thrift.framed</name> 
-    <value>true</value> 
-  </property> 
-  <property> 
-    <name>hbase.regionserver.thrift.framed.max_frame_size_in_mb</name> 
-    <value>2</value> 
-  </property> 
-  <property> 
     <name>hbase.regionserver.thrift.compact</name> 
     <value>true</value> 
   </property>
