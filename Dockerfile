@@ -11,6 +11,8 @@ COPY *.sh /build/
 
 ENV HBASE_VERSION 1.2.4
 
+RUN apt-get update && apt-get install -y vim telnet
+
 RUN /build/prepare-hbase.sh && \
     cd /opt/hbase && /build/build-hbase.sh \
     cd / && /build/cleanup-hbase.sh && rm -rf /build
